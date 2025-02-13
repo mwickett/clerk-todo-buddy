@@ -18,12 +18,11 @@ const AuthWrapper = ({ children }: { children: React.ReactNode }) => {
               </div>
               <div className="text-center text-sm text-gray-600">
                 Don't have an account?{" "}
-                <SignUp routing="path" path="/sign-up">
-                  <span className="text-blue-500 hover:text-blue-600 cursor-pointer">
-                    Sign up
-                  </span>
-                </SignUp>
+                <a href="/sign-up" className="text-blue-500 hover:text-blue-600">
+                  Sign up
+                </a>
               </div>
+              <SignUp routing="path" path="/sign-up" afterSignUpUrl="/" />
             </div>
           </div>
         </div>
