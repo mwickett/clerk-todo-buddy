@@ -13,7 +13,10 @@ if (!PUBLISHABLE_KEY) {
 
 createRoot(document.getElementById("root")!).render(
   <BrowserRouter>
-    <ClerkProvider publishableKey={PUBLISHABLE_KEY}>
+    <ClerkProvider 
+      publishableKey={PUBLISHABLE_KEY} 
+      clerkJSVersion="5.54.0-snapshot.v20250226180848"
+    >
       <App />
     </ClerkProvider>
   </BrowserRouter>
